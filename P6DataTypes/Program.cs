@@ -12,8 +12,7 @@ Console.WriteLine(isAwsome);
 
 /*
  This is a byte type variable, which contain byte data.
- Unlike the variable int, which store only up to 4 byte, this type store up to 8.
- In other words, it can contain higher numbers
+ Unlike int-type, byte contains smaller numbers, 0-255.
  */
 byte hexByte = 0xa7;
 Console.WriteLine(hexByte);

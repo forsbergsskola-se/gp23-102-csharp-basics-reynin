@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Comment", "P4Comment\P4Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P5Variables", "P5Variables\P5Variables.csproj", "{D153C6E2-19CA-4B45-889C-F4D9380330C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P6DataTypes", "P6DataTypes\P6DataTypes.csproj", "{77AF4FEE-1BF6-445A-9FDF-DF42BD0BB866}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D153C6E2-19CA-4B45-889C-F4D9380330C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D153C6E2-19CA-4B45-889C-F4D9380330C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D153C6E2-19CA-4B45-889C-F4D9380330C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AF4FEE-1BF6-445A-9FDF-DF42BD0BB866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AF4FEE-1BF6-445A-9FDF-DF42BD0BB866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AF4FEE-1BF6-445A-9FDF-DF42BD0BB866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AF4FEE-1BF6-445A-9FDF-DF42BD0BB866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

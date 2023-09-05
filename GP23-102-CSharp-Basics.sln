@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P3PrintingOutput", "P3PrintingOutput\P3PrintingOutput.csproj", "{2678D01D-1C99-4D52-89BF-F35FD6020656}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P4Comment", "P4Comment\P4Comment.csproj", "{DDEBA4CE-F8BD-46DF-BE82-FCCDC05D42B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2678D01D-1C99-4D52-89BF-F35FD6020656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2678D01D-1C99-4D52-89BF-F35FD6020656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2678D01D-1C99-4D52-89BF-F35FD6020656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEBA4CE-F8BD-46DF-BE82-FCCDC05D42B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEBA4CE-F8BD-46DF-BE82-FCCDC05D42B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEBA4CE-F8BD-46DF-BE82-FCCDC05D42B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEBA4CE-F8BD-46DF-BE82-FCCDC05D42B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

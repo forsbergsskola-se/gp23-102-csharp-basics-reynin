@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P7Input", "P7Input\P7Input.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P8Conversion", "P8Conversion\P8Conversion.csproj", "{7D7BBAD8-B949-4663-BC3D-C8FDD4FAE78D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P9Operaters", "P9Operaters\P9Operaters.csproj", "{4D882E12-021C-4761-951A-A83AA96EF042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PExercise", "PExercise\PExercise.csproj", "{EED8999E-A28E-45C8-B2D9-233F14269B08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{7D7BBAD8-B949-4663-BC3D-C8FDD4FAE78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D7BBAD8-B949-4663-BC3D-C8FDD4FAE78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D7BBAD8-B949-4663-BC3D-C8FDD4FAE78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D882E12-021C-4761-951A-A83AA96EF042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D882E12-021C-4761-951A-A83AA96EF042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D882E12-021C-4761-951A-A83AA96EF042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D882E12-021C-4761-951A-A83AA96EF042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED8999E-A28E-45C8-B2D9-233F14269B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED8999E-A28E-45C8-B2D9-233F14269B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED8999E-A28E-45C8-B2D9-233F14269B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED8999E-A28E-45C8-B2D9-233F14269B08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

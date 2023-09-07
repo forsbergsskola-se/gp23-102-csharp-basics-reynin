@@ -143,7 +143,6 @@ void secToMin()
     float minutes = (float)seconds / 60;
     Console.WriteLine($"That is {minutes} minutes!");
 }
-secToMin();
 void exer()
 {
 
@@ -157,3 +156,11 @@ void exer()
     float x = userNumber / 60 / 60 * 1000; //If using int type, prioritise multiplication before division.
     Console.WriteLine($"That would be {x} m/s.");
 }
+
+//Bonus Exercise
+void exer1()
+{
+    int x = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine(--x*-1);
+}
+exer1();

@@ -1,15 +1,18 @@
 ﻿Console.WriteLine("Give me a number of seconds");
 string? input = Console.ReadLine();
-
 float seconds = float.Parse(input);
-float days = seconds / 60 / 60 / 24;
 
-int iHour = (int)days * 24;
-int iMinutes = iHour * 60;
-int iSecond = iMinutes * 60;
+int iSeconds = (int)seconds % 60;
+float minutes = seconds / 60;
 
-Console.WriteLine($" Seconds: {seconds}\n Minutes: {iMinutes}\n Hour: {iHour}\n Days: {days}");
+int iMinutes = (int)minutes % 60;
+float hour = minutes / 60;
 
+int iHour = (int)hour % 24;
+float days = hour / 24;
 
-Console.WriteLine($"{days}.{iHour}:{iMinutes}:{iSecond}");
-Console.WriteLine($"In total, that's {days} Days.");x
+int iDays = (int)days;
+
+Console.WriteLine($" Seconds: {iSeconds}\n Minutes: {iMinutes}\n Hour: {iHour}\n Days: {iDays}");
+Console.WriteLine($"{iDays}.{iHour}:{iMinutes}:{iSeconds}");
+Console.WriteLine($"In total, that's {days} Days.");

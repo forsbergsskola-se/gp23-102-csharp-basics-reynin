@@ -1,18 +1,9 @@
 ﻿Console.WriteLine("What's your age?");
 int age = int.Parse(Console.ReadLine());
 
-if (age > 0 && age <= 12)
-{
-    Console.WriteLine("You are a child.");
-}
-else if (age <= 19)
-{
-    Console.WriteLine("You are a teenager.");
-}
-else
-{    
-    Console.WriteLine("You are a grown-up.");
-}
+string result = age > 0 && age <= 12 ? "You are a child." : age <= 19 ? "You are a teenager." : "You are a grown-up.";
+
+Console.WriteLine(result);
 
 Console.WriteLine("Give me another integer.");
 int inputNumber = int.Parse(Console.ReadLine());

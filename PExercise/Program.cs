@@ -1,7 +1,8 @@
 ﻿//Exercise 1
 void convertHourToSec()
-{
-    Console.WriteLine("Give me a number in km/h");
+{   
+    Console.WriteLine("Welcome to speed-converter!");
+    Console.WriteLine("Please enter a number in km/h");
     string userInput = Console.ReadLine();
     float kmh = float.Parse(userInput);
 
@@ -33,7 +34,7 @@ void division()
     string y = Console.ReadLine();
     int y1 = int.Parse(y);
 
-    float z = x1 / y1;
+    float z = (float)x1 / y1;
 
     Console.WriteLine($"The accurate result will be {z}");
 }
@@ -61,8 +62,7 @@ void areaCircle()
     
     string inputRadius = Console.ReadLine();
     float Radius = float.Parse((inputRadius));
-    float area = Radius*Radius * Single.Pi;
-    Console.WriteLine(area);
+    float area = Radius*Radius * Single.Pi; //Math.PI works as well
     
     Console.WriteLine($"The area of the circle is {area}!");
 }
@@ -102,14 +102,14 @@ void bmi()
     Console.WriteLine("What is your weight (kg)");
 
     string inputW = Console.ReadLine();
-    int weight = int.Parse(inputW);
+    float weight = float.Parse(inputW);
     
-    Console.WriteLine("And how tall(m) are you?");
+    Console.WriteLine("And how tall (m) are you?");
     
     string inputH = Console.ReadLine();
-    int height = int.Parse(inputH);
+    float height = float.Parse(inputH);
 
-    int bodyMass = weight / (height * height);
+    float bodyMass = weight / (height * height);
     
     Console.WriteLine($"Your BMI is: {bodyMass}");
 }
@@ -127,7 +127,8 @@ void hypotenuse()
     string input1 = Console.ReadLine();
     float floor = float.Parse(input1);
 
-    float hypo = (wall * wall) + (floor + floor);
+    float x = (wall * wall) + (floor + floor);
+    float hypo = MathF.Sqrt(x);
     
     Console.WriteLine($"The hypotenuse of the triangle is: {hypo}");
 }
@@ -136,11 +137,11 @@ void hypotenuse()
 void secToMin()
 {
     Console.WriteLine("Give me number as seconds");
-    
-    string input = Console.ReadLine();
-    int seconds = int.Parse(input);
 
-    float minutes = (float)seconds / 60;
+    int totalSeconds = int.Parse((Console.ReadLine()));
+
+    float minutes = (float)totalSeconds / 60;
+    float seconds = (float)totalSeconds % 60;
     Console.WriteLine($"That is {minutes} minutes!");
 }
 void exer()
@@ -163,4 +164,61 @@ void exer1()
     int x = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine(--x*-1);
 }
-exer1();
+
+//Exercise P11_1
+void alphabet ()
+{
+    Console.WriteLine("Give me a number");
+    int input = int.Parse((Console.ReadLine()));
+
+    string result = input < 60 ? "F" : input < 69 ? "D" : input < 79 ? "C" : input < 89 ? "B" : "A";
+    
+    Console.WriteLine($"That number represent {result}!");
+}
+
+//Exercise P11_2
+void minMax()
+{
+    Console.WriteLine("Please input a number");
+    int firstInput = int.Parse(Console.ReadLine());
+    Console.WriteLine("Please input a second number");
+    int secondInput = int.Parse(Console.ReadLine());
+    Console.WriteLine("Please input a third number");
+    int thirdInput = int.Parse(Console.ReadLine());
+
+    int smallest = firstInput < secondInput && firstInput < thirdInput ? firstInput :
+        secondInput < firstInput && secondInput < thirdInput ? secondInput : thirdInput;
+    
+    int biggest = firstInput > secondInput && firstInput > thirdInput ? firstInput :
+        secondInput > firstInput && secondInput > thirdInput ? secondInput : thirdInput;
+    
+    Console.WriteLine($"{smallest}, {biggest}");
+}
+
+//Exercise P11_3
+void characters()
+{
+    Console.WriteLine("Please input a single character");
+    var inputCharacter = Console.ReadLine();
+    
+    if (inputCharacter =);
+    {
+        
+    }
+}
+
+//Exercise P11_4
+void Calculater()
+{
+    Console.WriteLine("Please enter your first number");
+    int firstInput = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("What do you wish to do? Addition?\nSubtraction?\nMultiplication?\nDivision?");
+    string opp = Console.ReadLine();
+    
+    Console.WriteLine("And with what second number?");
+    int secondInput = int.Parse(Console.ReadLine());
+        
+    int result = opp == "Addition" ? firstInput + secondInput: opp == "Subtraction" ? firstInput - secondInput: opp == ""
+
+}

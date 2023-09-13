@@ -18,10 +18,10 @@ if (matches == playerDraw) //Game Over if player loses
 }
     
 matches -= playerDraw;
+
 int matchCount = 0;
 displayMatches:
 matchCount++;
-
 if (matchCount <= matches) //The printout
 {
     Console.Write("|");
@@ -29,36 +29,27 @@ if (matchCount <= matches) //The printout
 }
 
 Console.Write($" ({matches})\n");
-Random random = new Random();
-impossible:
-int drawAI = random.Next(1, 4);
-    
-if (drawAI > matches)
-{
-    goto impossible;
-}
+
+int drawAI = Random.Shared.Next(1, 4);
+
 Console.WriteLine($"Ai draws {drawAI} matches.");
-if (matches == drawAI) //Game Over when ai loses
-{
-    Console.WriteLine("\nAi lose!");
-    goto theEnd;
-}
 
 matches -= drawAI;
 
 matchCount = 0;
 displayMatchesAi:
 matchCount++;
-
 if (matchCount <= matches) //The printout
 {
     Console.Write("|");
     goto displayMatchesAi;
 }
 
-Console.Write($" ({matches})\n");
 if (matches > 0)
 {
-    goto round;   
+    Console.Write($" ({matches})\n");
+    goto round;
 }
+
+Console.WriteLine("\nAi lose!");//Game Over when ai loses
 theEnd: ;

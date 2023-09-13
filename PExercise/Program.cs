@@ -200,11 +200,7 @@ void characters()
 {
     Console.WriteLine("Please input a single character");
     var inputCharacter = Console.ReadLine();
-    
-    if (inputCharacter =);
-    {
-        
-    }
+   
 }
 
 //Exercise P11_4
@@ -218,7 +214,73 @@ void Calculater()
     
     Console.WriteLine("And with what second number?");
     int secondInput = int.Parse(Console.ReadLine());
-        
-    int result = opp == "Addition" ? firstInput + secondInput: opp == "Subtraction" ? firstInput - secondInput: opp == ""
 
+    int result = opp == "Addition" ? firstInput + secondInput :
+        opp == "Subtraction" ? firstInput - secondInput :
+        opp == "Multiplication" ? firstInput * secondInput : 
+        firstInput / secondInput;
+    
+    Console.WriteLine(result);
+}
+
+//Exercise P11_5
+
+void evenOrOdd()
+{
+
+}
+
+//Exercise
+
+void simplification()
+{
+    // printing output
+    Console.WriteLine("What's your age?");
+    // console input && variable && type
+    string ageInput = Console.ReadLine();
+    // conversion && variable && type
+    int age = int.Parse(ageInput);
+    // conditional branching && boolean expressions && comparison operator
+    if (age < 13)
+    {
+        Console.WriteLine("You are a child.");
+    }
+    else if (age <= 19)
+    {
+        Console.WriteLine("You are a teen.");
+    }
+    else
+    {
+        Console.WriteLine("You are an adult.");
+    }
+
+    Console.WriteLine("Give me another integer.");
+    string numberInput = Console.ReadLine();
+    int number = int.Parse(numberInput);
+
+    // if.. else to assign higher number to max
+    int maxNumber = age > number ? age : number;
+    // have this code block only once, not twice,
+    // without condition, using max variable
+    Console.WriteLine($"The maximum is {maxNumber}.");
+
+    if (number % 2 == 0)
+    {
+        Console.WriteLine("It's an even number.");
+    }
+    else
+    {
+        Console.WriteLine("It's an odd number.");
+    }
+}
+
+//Exercise P12_1
+void coordinates()
+{
+    Random random = new Random();
+    
+    int coordinateX = random.Next(0, 101);
+    int coordinateY = random.Next(0, 101);
+    
+    Console.WriteLine($"The coordinates are {coordinateX}, {coordinateY}");
 }

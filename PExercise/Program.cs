@@ -284,3 +284,80 @@ void coordinates()
     
     Console.WriteLine($"The coordinates are {coordinateX}, {coordinateY}");
 }
+
+
+//Exercise P13_1
+void Dollars()
+{
+    int userInput = int.Parse((Console.ReadLine()));
+    int printCount = 0;
+    repeat:
+    printCount++;
+    if (printCount <= userInput)
+    {
+        Console.Write("$");
+        goto repeat;
+    }
+}
+
+
+//Exercise P13_2
+void triangleQuick() //Quick-Way,thanks Hugo!
+{
+    int userInput = int.Parse(Console.ReadLine());
+    repeat:
+    if (userInput > 0)
+    {
+        Console.WriteLine($"{new string('#', userInput)}");
+        userInput--;
+        goto repeat;
+    }
+}
+
+void Triangle()
+{
+    int userInput = int.Parse(Console.ReadLine());
+    int counter = userInput;
+    newLine:
+    repeat:
+    if (counter > 0)
+    {
+        Console.Write("#");
+        counter--;
+        goto repeat;
+    }
+    if (counter == 0)
+    {
+        Console.Write("\n");
+        userInput--;
+        counter = userInput;
+        goto newLine;
+    }
+}
+
+
+//Exercise P13_3
+void Pattern()
+{
+    int userInput = int.Parse(Console.ReadLine());
+    int counter = userInput;
+    repeat:
+    if (userInput !=0)
+    {
+        repeat2: //Print-out line
+        if (counter > 0)
+        {
+            Console.Write("#-");
+            counter--;
+            goto repeat2;
+        }
+
+        counter = userInput;
+        userInput--;
+        Console.Write("\n");
+        goto repeat;
+    }
+
+
+}
+Pattern();

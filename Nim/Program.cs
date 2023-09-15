@@ -103,12 +103,8 @@ void smartAiNim()
     Console.Write($" ({matches})\n");
     
     int drawAI = playerDraw == 1 ? 3 : playerDraw == 2 ? 2 : 1; //SmartAI turn
-
-    if (matches == 11 || matches == 10 || matches == 10)
-    {
-        drawAI = 1;
-    }
-    else if (matches <= 8)
+    
+    if (matches <= 12)
     {
         if (playerDraw == 1)
         {

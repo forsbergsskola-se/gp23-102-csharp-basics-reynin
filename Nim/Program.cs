@@ -39,7 +39,7 @@ Console.Write($" ({matches})\n");
 //Ai's turn
     
 int drawAI = matches % 4 == 0 ? 3 : matches % 2 != 0 ? 2 : 1; //With smarter AI; if ai is in certain position, it will try to put player in losing position (5, 9, 13, 17, 21)
-                                                              // Basic way: int drawAI = Random.Shared.Next(1, 4);
+                                                              //Basic way: int drawAI = Random.Shared.Next(1, 4);
     
 Console.WriteLine($"Ai draws {drawAI} matches.");
 

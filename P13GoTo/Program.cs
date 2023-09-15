@@ -1,7 +1,6 @@
 ﻿int compNumber = Random.Shared.Next(1,101);
 
 Console.WriteLine("I have picked a number (1-100). It's your turn to guess it!");
-Console.WriteLine("You don't need more than 7 guesses.");
 Console.WriteLine("You lose after 10 guesses.");
 
 int tryCounter = 0;
